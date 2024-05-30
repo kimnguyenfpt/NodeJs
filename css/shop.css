@@ -1,0 +1,35 @@
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: calc(33.333% - 20px);
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 20px;
+}
+
+.page-item {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.page-item.disabled a,
+.page-item.active a {
+    color: #999;
+    cursor: not-allowed;
+}
+
+.page-link {
+    text-decoration: none;
+    color: #007bff;
+}
